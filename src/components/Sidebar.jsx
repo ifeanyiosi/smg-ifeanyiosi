@@ -21,7 +21,7 @@ const Sidebar = () => {
         </div>
         <div className="flex flex-col">
           <h1 className="text-slate-100 text-xl">User Groove</h1>
-          <p className="text-slate-300 text-xs">By Ifeanyi Osi-Okeke</p>
+          <p className="text-slate-300 text-xs text-black">By Ifeanyi Osi-Okeke</p>
         </div>
       </div>
 

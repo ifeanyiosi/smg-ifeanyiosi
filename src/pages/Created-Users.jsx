@@ -7,6 +7,7 @@ import { BiUser } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { loadedUsers } from "../Features/users";
 import { Link } from "react-router-dom";
+import snake from '../assets/snake.gif'
 
 const ViewCreatedUsers = () => {
   
@@ -38,7 +39,7 @@ const ViewCreatedUsers = () => {
           {loading ? (
             <div className="flex items-center justify-center w-full h-full">
               <h1 className="text-slate-900 text-2xl font-bold animate-pulse">
-                Loading...
+                <img src={snake} alt="" />
               </h1>
             </div>
           ) : (

@@ -7,8 +7,11 @@ import { BiUser } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { loadedUsers } from "../Features/users";
 import { Link } from "react-router-dom";
+import useFullPageLoader from "../components/UseFullPageLoader";
+import snake from './../assets/snake.gif'
 
 const Users = ({ isPosts, isUsers, activeLink, setActiveLink }) => {
+  const  [loader, showLoader, hideLoader] = useFullPageLoader();
  
   const {
     singleUserComment,
@@ -50,7 +53,7 @@ const Users = ({ isPosts, isUsers, activeLink, setActiveLink }) => {
           {loading ? (
             <div className="flex items-center justify-center w-full h-full">
               <h1 className="text-slate-900 text-2xl font-bold animate-pulse">
-                Loading...
+                <img src={snake} alt="" />
               </h1>
             </div>
           ) : (

@@ -8,6 +8,7 @@ import Table from "../components/Table";
 import { loadedPosts } from "../Features/posts";
 import Layout from "../layout";
 import useFetch from "../useFetch";
+import snake from '../assets/snake.gif'
 
 const AdminSearchPage = () => {
   const dispatch = useDispatch();
@@ -125,7 +126,7 @@ const AdminSearchPage = () => {
         {loading ? (
           <div className="flex items-center justify-center w-full h-full">
             <h1 className="text-slate-900 text-2xl font-bold animate-pulse">
-              Loading...
+              <img src={snake} alt="" />
             </h1>
           </div>
         ) : (

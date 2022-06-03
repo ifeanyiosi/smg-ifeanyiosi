@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { loadedPosts, onePost } from "../Features/posts";
 import ShowPosts from "../components/ShowPosts";
+import snake from '../assets/snake.gif'
 
 const Posts = ({ isPosts, isUsers, activeLink, setActiveLink }) => {
   const dispatch = useDispatch();
@@ -59,7 +60,7 @@ const Posts = ({ isPosts, isUsers, activeLink, setActiveLink }) => {
           {loading ? (
             <div className="flex items-center justify-center w-full h-full">
               <h1 className="text-slate-900 text-2xl font-bold animate-pulse">
-                Loading...
+                <img src={snake} alt="" />
               </h1>
             </div>
           ) : (
